@@ -1,6 +1,6 @@
 from tkinter import *
 from PIL import Image, ImageTk
-from Employee import Employee_Module
+from Employee_Dashboard import Employee_Module
 class Inventory_Management_System:
     def __init__(self , root_Object):
         self.rootObject = root_Object
@@ -62,6 +62,7 @@ class Inventory_Management_System:
     #----------------------------> Employee-Module <---------------------
     def employee_Section(self):
         self.employee_Window = Toplevel( self.rootObject )
+        self.employee_Window.resizable( False , False )
         self.employee = Employee_Module( self.employee_Window )
 
 

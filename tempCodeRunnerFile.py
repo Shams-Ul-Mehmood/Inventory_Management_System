@@ -1,1 +1,1 @@
-616A6B
+self.employee_User_Type = StringVar()
